@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="valid.js"></script>
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+        <div class="container"> 
+         
+             <h1 class="title"> REGISTRATION </h1>
+        <form  id="form" action="AdmissionServlet" method="post" enctype="multipart/form-data">
+            <div class="userInfo">
+                <div class="inputBox">
+            <label>Pseudo Name:</label> 
+            <input type="text"  placeholder="Enter First name" id="do" name="fname" required  oninput="validatePseudo()"> 
+            <span id="doError" style="color: grey;"></span>
+                </div>
+              <div class="inputBox">   
+            <label>Full Name:</label> 
+            <input type="text"  placeholder="Enter Last name" id="lname" name="lname" required  oninput="validateLname()">  
+            <span id="lnameError" style="color: grey;"></span>
+              </div>
+                <div class="inBox">
+            <label>Phone:</label>
+            <br>
+            <select>
+                <option value="10">+211</option>
+                <option value="11">+243</option>
+                <option value="12">+250</option>
+                <option value="13">+256</option>
+                <option value="14">+257</option>
+            </select>  
+            <input type="text" placeholder="*********" id="phone" name="phone" required oninput="validatePhone()">  
+            <span id="phoneError" style="color: grey;"></span>
+              </div>
+                 <div class="inputBox">
+            <label>Email:</label> 
+            <input type="email" id="email" placeholder="Enter email" name="email" required oninput="validateEmail()">
+            <span id="emailError" style="color: grey;"></span>
+                 </div>
+                 
+                 <div class="inputBox">
+            <label>Option:</label>
+            <select id="l1" name="faculty" onchange="changeOption()">
+                <option value="4">Choose Interest</option>
+                <option value="1">IT</option>
+                <option value="2">Business</option>
+                <option value="3">Finance</option>
+            </select>
+            <span id="facultyError" style="color: grey;"></span>
+                 </div>
+                 <div class="inputBox">
+            <label>Major:</label>
+            <select id="l2" name="major">
+            <option>Choose Major</option>
+            </select>
+            <span id="departmentError" style="color: grey;"></span>
+                 </div>
+                <div class="genderBox">      
+            <label>Gender:</label>
+            <div class="cat">
+                <input type="radio" id="male" name="gender" required>&nbsp;  Male
+            <input type="radio" id="female" name="gender" required>&nbsp;  Female 
+            </div>
+            <span id="genderError" style="color: grey;"></span>
+                 </div>
+                <div></div><div></div><div></div>
+                <div></div><div></div><div></div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
+                  <div class="inputBox">
+            <label>Date of Birth:</label> 
+            <input type="date" id="dob" name="dob" required onchange="validateBirthdate()" >  
+            <span id="dobError" style="color: grey;"></span> 
+                 </div>
+                 
+                <br><br>
+                <div class="inputBox"> <label> ID picture</label></div>
+                <div class="inpuBox">
+                <input type="file" id="myFile" accept=".png, .jpg" onchange="validateFile()" name="image" style="color: white;" required>
+                
+                </div>
+                <div class="inputBox">  <label>Diploma certificate</label></div>
+                <div class="inpuBox">
+                    <input type="file" id="pdfFile" name="pdf" onchange="validateFileType();" accept=".pdf" style="color: white;" required=""> 
+               
+                </div>
+              
+             
+                      
+         </div>
+        
+       <div class="btnBox">
+                   
+        <input type="submit" value="Register" onclick="submitForm()">
+       
+               
+        </div>
+            </form>
+            </div>
+        </body>
+</html>

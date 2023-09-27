@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;    
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+        
+}
+
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(16, 107, 243, 0.9);
+    padding: 28px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px gray;
+    justify-content: center;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #cccccc;
+    /*text-shadow: 2px 2px 2px wheat;*/
+    border-bottom: solid 1px white;
+}
+
+.userInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.inputBox label{
+    width: 95%;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.inputBox input,select{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.genderBox label{
+    width: 95%;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.cat{
+    margin: 15px 0;
+    color: #cccccc;
+}
+.cat label{
+    padding: 0 20px 0 5px;
+}
+.cat label,
+.cat input,
+.btnBox input{
+    cursor: pointer;
+}
+.btnBox input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(209,209,209);
+    background: rgba(63,114,76,0.7);
+   
+}
+.btnBox input:hover{
+    background: #d47e14;
+    color: whitesmoke;
+    
+}
+.inBox label{
+    width: 95%;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 9px 0; 
+}
+.inBox select{
+    height: 40px;
+    width: 30%;
+    border-radius: 7px;
+    outline: none;  
+    border: 1px solid grey;
+    padding: 0 10px; 
+}
+
+.inBox input{
+    height: 40px;
+    width: 65%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.inpuBox input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 10px;
+}
+.inpuBox label{
+     width: 95%;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 9px 0; 
+}

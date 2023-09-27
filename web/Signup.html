@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="valid.js"></script>
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+        <div class="container"> 
+         
+             <h1 class="title"> SIGN UP </h1>
+         <form  id="form" action="SignUpServlet" method="post">
+            <div class="userInfo">
+                <div class="inputBox">
+       <label>First Name:</label> 
+            <input type="text"  placeholder="Enter First name" id="fname" name="fname" required oninput="validateFname()"> 
+            <span id="fnameError" style="color: grey;"></span>
+                </div>
+              <div class="inputBox">   
+            <label>Last Name:</label> 
+            <input type="text"  placeholder="Enter Last name" id="lname" name="lname" required  oninput="validateLname()">  
+            <span id="lnameError" style="color: grey;"></span>
+              </div>
+                 <div class="inputBox">
+            <label>Email:</label> 
+            <input type="email" id="email" placeholder="Enter email" name="email" required oninput="validateEmail()">
+            <span id="emailError" style="color: grey;"></span>
+                 </div>
+                 
+            <div class="inputBox">
+            <label>Password:</label> <input type="password"  placeholder="Enter password" id="pass" name="password" required oninput="validatePassword()"> 
+            <span id="passError" style="color: grey;"></span>
+                 </div>
+                 <div class="inputBox">
+            <label> Confirm Password:</label> <input type="password"  placeholder="Enter password again" id="confpass" name="confpass" required oninput="validateConfPassword()" > 
+            <span id="confpassError" style="color: grey;"></span>
+                 </div>
+                
+                 
+            </div>
+            
+       
+              <div class="btnBox">
+                   
+        <input type="submit" value="Sign Up" onclick="submitForm()">
+            </div>
+             <br><br>
+             <div><a href="Login.html">Already have Account</a></div>
+          </form>
+        </div>
+        
+    </body>
+</html>
